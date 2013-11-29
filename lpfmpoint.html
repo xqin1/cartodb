@@ -8,7 +8,7 @@
     <link href="http://code.google.com/apis/maps/documentation/javascript/examples/default.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="css/cartodb.css">
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUcrnc-5Y3rVaWKJlx0EadasWDxoRy__4&sensor=false"></script>
     <script type="text/javascript" src="lib/wax.g.js"></script>
     <script type="text/javascript" src="lib/cartodb-gmapsv3.js"></script>
     <script type="text/javascript" src="lib/dat.gui.min.js"></script>
@@ -26,6 +26,7 @@
     var endOfPlay=false;
    
     function initialize() {
+       // google.maps.visualRefresh = true;
         // initialise the google map
          map = new google.maps.Map(document.getElementById('map_canvas'), {
             //center:new google.maps.LatLng(39.5,-98),
@@ -92,7 +93,7 @@
             Torque.env = env;
         });
 
- 		//map.setCenter(new google.maps.LatLng(40,-98));
+ 		map.setCenter(new google.maps.LatLng(40,-98));
        
 
     }
